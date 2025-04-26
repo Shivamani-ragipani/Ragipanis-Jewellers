@@ -1,0 +1,74 @@
+.service-features {
+    padding: 40px 0;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .feature-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+  }
+  
+  .feature-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #f0e6d9;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    color: #e5b27a;
+    font-size: 20px;
+  }
+  
+  .feature-content h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .feature-content p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .icon-shipping:before {
+    content: "🚚";
+    font-size: 16px;
+  }
+  
+  .icon-return:before {
+    content: "↩️";
+    font-size: 16px;
+  }
+  
+  .icon-support:before {
+    content: "🛎️";
+    font-size: 16px;
+  }
+  
+  .icon-payment:before {
+    content: "🔒";
+    font-size: 16px;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 992px) {
+    .features-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .features-grid {
+      grid-template-columns: 1fr;
+    }
+  }

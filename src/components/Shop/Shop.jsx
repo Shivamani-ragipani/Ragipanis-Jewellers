@@ -979,12 +979,12 @@ const Shop = () => {
                       <div className="product-price">
                         {product.price.min === product.price.max ? (
                           <>
-                            {product.originalPrice && <span className="old-price">${product.originalPrice}</span>}
-                            <span className="current-price">${product.price.min}</span>
+                            {product.originalPrice && <span className="old-price">₹{product.originalPrice}</span>}
+                            <span className="current-price">₹{product.price.min}</span>
                           </>
                         ) : (
                           <span className="price-range">
-                            ${product.price.min} – ${product.price.max}
+                            ₹{product.price.min} – ₹{product.price.max}
                           </span>
                         )}
                       </div>

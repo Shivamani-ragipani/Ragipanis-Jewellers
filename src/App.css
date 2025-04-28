@@ -1,0 +1,92 @@
+/* Reset and base styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  padding: 60px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.section-subtitle {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #777;
+  font-size: 16px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #e5b27a;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #d9a05e;
+}
+
+.btn-secondary {
+  background-color: transparent;
+  border: 1px solid #e5b27a;
+  color: #e5b27a;
+}
+
+.btn-secondary:hover {
+  background-color: #e5b27a;
+  color: white;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .section {
+    padding: 40px 0;
+  }
+  
+  .section-title {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,177 @@
+.home-page {
+    overflow-x: hidden;
+  }
+  
+  .bg-light {
+    background-color: #f9f9f9;
+  }
+  
+  .special-offer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+  
+  .special-offer-item {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  .special-offer-content {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .special-offer-image {
+    flex: 1;
+    min-height: 300px;
+  }
+  
+  .special-offer-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .special-tag {
+    display: inline-block;
+    background-color: #f0e6d9;
+    color: #e5b27a;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .special-offer-content h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .special-offer-content p {
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .featured-product-banner {
+    background-image: url('../../public/featuredearring.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .featured-product-banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0) 100%);
+    border-radius: 8px;
+  }
+  
+  .featured-product-content {
+    position: relative;
+    z-index: 1;
+    max-width: 500px;
+    padding: 40px;
+    color: white;
+  }
+  
+  .featured-tag {
+    display: inline-block;
+    background-color: rgba(229, 178, 122, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  .featured-product-content h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+  }
+  
+  .featured-product-content p {
+    margin-bottom: 25px;
+    opacity: 0.9;
+  }
+  
+  .featured-bracelet-banner {
+    display: flex;
+    background-image: url('../../public/featuredNecklace.jpeg');
+    align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .featured-bracelet-content {
+    flex: 1;
+    padding: 40px;
+  }
+  
+  .featured-bracelet-image {
+    flex: 1;
+    height: 400px;
+  }
+  
+  .featured-bracelet-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 992px) {
+    .special-offer-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .featured-bracelet-banner {
+      flex-direction: column;
+    }
+    
+    .featured-bracelet-content {
+      order: 1;
+    }
+    
+    .featured-bracelet-image {
+      order: 0;
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .special-offer-item {
+      flex-direction: column;
+    }
+    
+    .special-offer-image {
+      order: -1;
+    }
+    
+    .featured-product-banner {
+      height: auto;
+      padding: 40px 0;
+    }
+    
+    .featured-product-content {
+      max-width: 100%;
+    }
+  }

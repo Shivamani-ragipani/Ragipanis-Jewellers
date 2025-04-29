@@ -20,9 +20,13 @@ const ProductCard = ({ product }) => {
     <div className="product-grid">
     <div className="product-card">
       <div className="product-image">
-        <Link to={`/product/${id}`}>
+        {/* <Link to={`/product/${id}`}>
           <img src={image || "/placeholder.svg"} alt={name} />
-        </Link>
+        </Link> */}
+
+        <Link to='/shop'>
+          <img src={image || "/placeholder.svg"} alt={name} />
+        </Link> 
         
         <div className="product-badges">
           {isNew && <span className="product-badge badge-new">NEW</span>}
@@ -45,11 +49,12 @@ const ProductCard = ({ product }) => {
       <div className="product-info">
         <div className="product-category">{category}</div>
         <h3 className="product-name">
-          <Link to={`/product/${id}`}>{name}</Link>
+          {/* <Link to={`/product/${id}`}>{name}</Link> */}
+          <Link to='/shop'>{name}</Link>
         </h3>
         
         <div className="product-price">
-          <span className="current-price">${salePrice || price}</span>
+          <span className="current-price">₹{salePrice || price}</span>
           {salePrice && <span className="old-price">₹{price}</span>}
         </div>
         

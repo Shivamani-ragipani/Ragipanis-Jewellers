@@ -5,22 +5,29 @@ import './FeaturedCategories.css';
 const FeaturedCategories = () => {
   const categories = [
     {
-      id: 1,
-      name: 'Yellow Gold & Diamond Ring',
-      image: '/Featured1.jpeg',
+      id: 16,
+      name: "Red Stone Gold Ring",
+      originalPrice: 650,
+      rating: 5,
+      image: "/ragipanis imgs/rings/ring51.jpg",
+      category: "Rings",
       link: '/shop/rings'
     },
     {
-      id: 2,
-      name: 'Infinity Diamond Bracelet',
-      image: '/Featured2.1.jpeg',
+      id: 38,
+      name: "Gold Bracelet",
+      rating: 4.9,
+      image: "/ragipanis imgs/bracelets/bracelet1.1.jpg",
+      category: "Bracelets",
       link: '/shop/bracelets'
     },
     {
-      id: 3,
-      name: 'Radiant Diamond Pendant',
-      image: '/featured3.jpeg',
-      link: '/shop/pendants'
+      id: 88,
+      name: "Minimalist Gold Necklace",
+      rating: 4,
+      image: "/ragipanis imgs/Necklaces/necklace32.1.jpg",
+      category: "Necklaces",
+      link: '/shop/Necklaces'
     }
   ];
   

@@ -7,7 +7,7 @@ const FeaturedProducts = () => {
   const products = [
     {
       id: 4,
-    name: "Blue Topaz Diamond Engagement Wedding Ring",
+    name: "Engagement Wedding Ring",
     price: 20000,
     originalPrice: 370,
     rating: 4,
@@ -21,7 +21,7 @@ const FeaturedProducts = () => {
     },
     {
       id: 127,
-      name: "Diamond Halo Engagement Ring",
+      name: "Lord Venkateshwara Ring",
       price: 32000,
       rating: 5,
       image: "/ragipanis imgs/rings/ring3.jpg",
@@ -34,7 +34,7 @@ const FeaturedProducts = () => {
     },
     {
       id: 87,
-    name: "Rose Gold Heart Pendant Necklace",
+    name: "Womens Gold Necklace",
     price: 19000,
     rating: 4.5,
     image: "/ragipanis imgs/Necklaces/necklace12.1.jpg",
@@ -59,30 +59,30 @@ const FeaturedProducts = () => {
       isSale: true,
     },
     {
-      id: 5,
-      name: 'Infinity Diamond Bracelet',
-      price: 299.99,
-      rating: 5,
-      image: '/featured2.jpeg',
-      category: 'Bracelets',
+      id: 40,
+        name: "Delicate Amethyst Gold Bracelet",
+        price: 17999,
+        rating: 4.2,
+        image: "/ragipanis imgs/bracelets/bracelet17.jpg",
+        category: "Bracelets",
       isNew: true,
       isSale: false
     },
     {
-      id: 6,
-      name: 'Radiant Diamond Pendant',
-      price: 249.99,
-      rating: 4,
-      image: '/Newthisweek1.jpeg',
-      category: 'Pendants',
+      id: 91,
+    name: "Gold Flower Choker Necklace",
+    price: 23000,
+    rating: 5,
+    image: "/ragipanis imgs/Necklaces/necklace16.1.jpg",
+    category: "Necklaces",
       isNew: false,
       isSale: false
     },
     {
       id: 7,
       name: 'Elegant Teardrop Earrings',
-      price: 199.99,
-      salePrice: 159.99,
+      price: 34000,
+      salePrice: 27999,
       rating: 5,
       image: '/featured4.jpeg',
       category: 'Earrings',
@@ -90,12 +90,12 @@ const FeaturedProducts = () => {
       isSale: true
     },
     {
-      id: 8,
-      name: 'Vintage Rose Gold Ring',
-      price: 349.99,
-      rating: 4,
-      image: '/featured1.jpeg',
-      category: 'Rings',
+      id: 127,
+    name: "Gold Diamond Flower Engagement Ring",
+    price: 17999,
+    rating: 5,
+    image: "/ragipanis imgs/rings/ring359.jpg",
+    category: "Rings",
       isNew: true,
       isSale: false
     }

@@ -3,6 +3,9 @@ import { Link } from 'react-router-dom';
 import './ProductCard.css'; // Assuming you have a CSS file for styling
 // import "../../src/components/Products/FeaturedProducts.css"; 
 
+import { FaHeart, FaSearch, FaShoppingCart, FaStar, FaStarHalf } from "react-icons/fa"
+import { BsGrid, BsListUl } from "react-icons/bs"
+
 const ProductCard = ({ product }) => {
   const { id, name, price, salePrice, rating, image, category, isNew, isSale } = product;
   
@@ -35,12 +38,16 @@ const ProductCard = ({ product }) => {
         
         <div className="product-actions">
           <button className="action-btn" title="Quick View">
+            <FaSearch />
             <i className="icon-eye"></i>
           </button>
           <button className="action-btn" title="Add to Wishlist">
-            <i className="icon-heart"></i>
+            <FaHeart />
+            {/* <i className="icon-heart"></i> */}
           </button>
           <button className="action-btn" title="Compare">
+            <FaShoppingCart />
+            {/* <i className="icon-compare"></i> */}
             <i className="icon-compare"></i>
           </button>
         </div>

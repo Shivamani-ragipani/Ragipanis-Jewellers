@@ -102,7 +102,7 @@ const AboutPage = () => {
           <h2 className="section-title">Our Craftsmanship Process</h2>
           <div className="process-content">
             <div className="process-image">
-              <img src="/jewellery_craftsmanShip.png" alt="Jewelry Craftsmanship" />
+              <img src="/Jewellery_craftsmanShip.png" alt="Jewelry Craftsmanship" />
             </div>
             <div className="process-steps">
               <div className="process-step">

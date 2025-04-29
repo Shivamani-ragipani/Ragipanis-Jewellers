@@ -8,7 +8,7 @@ const BrandSlider = () => {
     { id: 1, name: 'Aurora', logo: 'brand-aurora.png' },
     { id: 2, name: 'Lotus', logo: '/Brand-lotus.jpg' },
     { id: 3, name: 'Khazana', logo: '/brand-khazana.jpg' },
-    { id: 4, name: 'Avita', logo: '/brand-avita.jpg' },
+    { id: 4, name: 'Joyalukkas', logo: '/brand-joyalukkas.webp' },
     { id: 5, name: 'safar', logo: '/brand-safar.png' }
   ];
   

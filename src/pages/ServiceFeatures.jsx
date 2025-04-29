@@ -1,6 +1,8 @@
 import React from 'react';
 import './ServiceFeatures.css';
 
+import { FaHeart, FaSearch, FaShoppingCart, FaStar, FaStarHalf } from "react-icons/fa"
+
 const ServiceFeatures = () => {
   const features = [
     {

@@ -114,12 +114,47 @@
   
   .app-downloads {
     display: flex;
-    gap: 10px;
+    gap: 100px;
     margin-top: 20px;
+    cursor: pointer;
+    position: relative;
+    background: none;
+    border: none;
+    font-size: 35px;
+    color: #333;
+    transition: color 0.3s ease;
   }
+
+  .app-downloads {
+    display: flex;
+    gap: 60px;
+    margin-top: 20px;
+    cursor: pointer;
+    position: relative;
+    background: none;
+    border: none;
+    font-size: 35px;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  @media (max-width: 768px) {
+    .app-downloads {
+      gap: 30px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .app-downloads {
+      gap: 15px;
+    }
+  }
+  
+  
   
   .app-downloads img {
     height: 40px;
+    width: auto;
   }
   
   .contact-info li {
@@ -166,7 +201,8 @@
     color: white;
   }
   
-  .payment-methods img {
+  .payment-methods {
+    font-size: 30px;
     height: 24px;
   }
   

@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
 
+import { FaLocationArrow, FaPhone, FaMailBulk, FaClock, FaGithub, FaUser, FaPaypal, FaCashRegister, FaAppStore, FaGooglePlay} from "react-icons/fa"
+import { FaGem, FaAward, FaHandshake, FaHeart, FaInstagram, FaFacebookF, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
+
 const Footer = () => {
   return (
     <footer className="footer">
@@ -27,8 +30,10 @@ const Footer = () => {
               <h4>About Our Store</h4>
               <p>Welcome to our store, where we pride ourselves on providing exceptional products and unparalleled customer service our store style, and innovation.</p>
               <div className="app-downloads">
-                <Link to="#"><img src="/images/app-store.png" alt="App Store" /></Link>
-                <Link to="#"><img src="/images/google-play.png" alt="Google Play" /></Link>
+                {/* <Link to="#"><img src="/images/app-store.png" alt="App Store" /></Link> */}
+                <FaAppStore/>
+                {/* <Link to="#"><img src="/images/google-play.png" alt="Google Play" /></Link> */}
+                <FaGooglePlay/>
               </div>
             </div>
             
@@ -72,19 +77,23 @@ const Footer = () => {
               <h4>Contact Us</h4>
               <ul className="contact-info">
                 <li>
-                  <i className="icon-location"></i>
+                  <i className=""> <FaLocationArrow/>  </i>
                   <p>ChaitanyaPuri, Hyderabad, Telangana, India</p>
                 </li>
                 <li>
-                  <i className="icon-phone"></i>
+                  {/* <i className="icon-phone"></i> */}
+                  <i className=""><FaPhone /></i>
+                  
                   <p>+91 XXXXXXXXX</p>
                 </li>
                 <li>
-                  <i className="icon-phone"></i>
+                  {/* <i className="icon-phone"></i> */}
+                  <i className=""><FaPhone /></i>
                   <p>+91 XXXXXXXXX</p>
                 </li>
                 <li>
-                  <i className="icon-email"></i>
+                  {/* <i className="icon-email"></i> */}
+                  <i className=""> <FaMailBulk/></i>
                   <p>shivamaniragipani@gmail.com</p>
                 </li>
               </ul>
@@ -97,17 +106,18 @@ const Footer = () => {
         <div className="container">
           <div className="footer-bottom-content">
             <div className="social-links">
-              <Link to="#"><i className="icon-facebook"></i></Link>
-              <Link to="#"><i className="icon-twitter"></i></Link>
-              <Link to="#"><i className="icon-instagram"></i></Link>
-              <Link to="#"><i className="icon-pinterest"></i></Link>
-              <Link to="#"><i className="icon-google"></i></Link>
+              <Link to="https://portfolio-shivamani.vercel.app/"><i className=""><FaFacebookF/></i></Link>
+              <Link to="https://portfolio-shivamani.vercel.app/"><i className=""><FaTwitter/></i></Link>
+              <Link to="instagram.com/shivamani_ragipani/"><i className=""><FaInstagram/></i></Link>
+              <Link to="https://github.com/Shivamani-ragipani"><i className=""><FaGithub/></i></Link>
+              <Link to="https://portfolio-shivamani.vercel.app/"><i className=""><FaUser/></i></Link>
             </div>
             <div className="copyright">
-              <p>© 2025 Ragipani's Jewellers by Venkatesh Chary</p>
+              <p>© 1995 Ragipani's Jewellers by Venkatesh Chary</p>
             </div>
             <div className="payment-methods">
-              <img src="#" alt="Payment Methods" />
+              {/* <img src="#" alt="Payment Methods" /> */}
+              <FaPaypal />
             </div>
           </div>
         </div>

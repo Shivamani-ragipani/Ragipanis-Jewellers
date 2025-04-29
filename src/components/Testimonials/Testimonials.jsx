@@ -7,24 +7,24 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: 'Sarah Smith',
+      name: 'Shiva Reddy',
       role: 'Regular Customer',
-      image: '/images/testimonial-1.jpg',
-      text: '"Jubilee Product is Consistently Delivers Exceptional quality and service. Their attention to detail and commitment to customer satisfaction is unmatched in the industry."'
+      image: '/my-avatar.png',
+      text: '"Ragipanis Product is Consistently Delivers Exceptional quality and service. Their attention to detail and commitment to customer satisfaction is unmatched in the industry."'
     },
     {
       id: 2,
-      name: 'Michael Brown',
+      name: 'Dhanalaxmi Reddy',
       role: 'Verified Buyer',
-      image: '/images/testimonial-2.jpg',
+      image: '/avatar-2.png',
       text: '"Great Product! Price Matches Perfect! Their jewelry pieces are not only beautiful but also durable and exactly as described. The customer service team was incredibly helpful."'
     },
     {
       id: 3,
-      name: 'John Doe',
+      name: 'Swetha Chary',
       role: 'Loyal Customer',
-      image: '/images/testimonial-3.jpg',
-      text: '"Impressive Quality & Excellent Service! I\'ve been shopping with Jubilee for years and have never been disappointed. Their products are stunning and the service is always top-notch."'
+      image: '/avatar-3.png',
+      text: '"Impressive Quality & Excellent Service! I\'ve been shopping with Ragipanis for years and have never been disappointed. Their products are stunning and the service is always top-notch."'
     }
   ];
   

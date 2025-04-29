@@ -113,7 +113,7 @@ const Footer = () => {
               <Link to="https://portfolio-shivamani.vercel.app/"><i className=""><FaUser/></i></Link>
             </div>
             <div className="copyright">
-              <p>© 1995 Ragipani's Jewellers by Venkatesh Chary</p>
+              <p>© 1990 Ragipani's Jewellers by Venkatesh Chary</p>
             </div>
             <div className="payment-methods">
               {/* <img src="#" alt="Payment Methods" /> */}

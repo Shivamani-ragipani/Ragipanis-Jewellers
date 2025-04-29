@@ -11,7 +11,7 @@ const HeroSlider = () => {
       tag: 'NEW TREND & PROMOTIONS',
       title: 'Woman in Golden Rings And Necklaces',
       subtitle: 'Exquisite products for the dynamic urban lifestyle',
-      image: '/HomePage1.jpeg',
+      image: '/banner4.png',
       link: '/shop/necklaces'
     },
     {

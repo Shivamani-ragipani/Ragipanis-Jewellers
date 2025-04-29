@@ -1,13 +1,15 @@
 import React from 'react';
 import './BrandSlider.css';
 
+import { FaHeart, FaSearch, FaShoppingCart, FaStar, FaUser, FaShippingFast } from "react-icons/fa"
+
 const BrandSlider = () => {
   const brands = [
-    { id: 1, name: 'Aurea', logo: '/images/brand-1.png' },
-    { id: 2, name: 'LVM', logo: '/images/brand-2.png' },
-    { id: 3, name: 'Swarovski', logo: '/images/brand-3.png' },
-    { id: 4, name: 'Tiffany', logo: '/images/brand-4.png' },
-    { id: 5, name: 'Howard\'s', logo: '/images/brand-5.png' }
+    { id: 1, name: 'Aurora', logo: 'brand-aurora.png' },
+    { id: 2, name: 'Lotus', logo: '/Brand-lotus.jpg' },
+    { id: 3, name: 'Khazana', logo: '/brand-khazana.jpg' },
+    { id: 4, name: 'Avita', logo: '/brand-avita.jpg' },
+    { id: 5, name: 'safar', logo: '/brand-safar.png' }
   ];
   
   return (
@@ -16,6 +18,7 @@ const BrandSlider = () => {
         {brands.map(brand => (
           <div key={brand.id} className="brand-item">
             <img src={brand.logo || "/placeholder.svg"} alt={brand.name} />
+            <div className="brand-name">{brand.name}</div>
           </div>
         ))}
       </div>

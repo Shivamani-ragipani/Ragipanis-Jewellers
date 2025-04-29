@@ -12,23 +12,31 @@ const HeroSlider = () => {
       title: 'Woman in Golden Rings And Necklaces',
       subtitle: 'Exquisite products for the dynamic urban lifestyle',
       image: '/HomePage1.jpeg',
-      link: '/shop/gold'
+      link: '/shop/necklaces'
     },
     {
       id: 2,
       tag: 'SPECIAL COLLECTION',
       title: 'Elegant Diamond Jewelry Collection',
       subtitle: 'Timeless beauty with exceptional craftsmanship',
-      image: '/HomePage2.jpeg',
-      link: '/shop/diamond'
+      image: '/banner1.png',
+      link: '/shop'
     },
     {
       id: 3,
       tag: 'LIMITED EDITION',
       title: 'Luxury Wedding Collection',
       subtitle: 'Make your special day even more memorable',
-      image: '/homepage3.jpeg',
-      link: '/shop/wedding'
+      image: '/banner3.png',
+      link: '/shop'
+    },
+    {
+      id: 4,
+      tag: 'LIMITED EDITION',
+      title: 'Luxury Wedding Collection',
+      subtitle: 'Make your special day even more memorable',
+      image: '/banner2.png',
+      link: '/shop'
     }
   ];
   

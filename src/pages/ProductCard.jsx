@@ -6,6 +6,7 @@ import './ProductCard.css'; // Assuming you have a CSS file for styling
 import { FaHeart, FaSearch, FaShoppingCart, FaStar, FaStarHalf } from "react-icons/fa"
 import { BsGrid, BsListUl } from "react-icons/bs"
 
+
 const ProductCard = ({ product }) => {
   const { id, name, price, salePrice, rating, image, category, isNew, isSale } = product;
   

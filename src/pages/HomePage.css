@@ -114,11 +114,16 @@
   
   .featured-bracelet-banner {
     display: flex;
-    background-image: url('../../public/featuredNecklace.jpeg');
+    background-image: url('../../public/featuredbracelet.jpeg');
+    background-size: cover;
+    background-position: center;
     align-items: center;
-    background-color: #f9f9f9;
     border-radius: 8px;
     overflow: hidden;
+    width: 100%;
+    max-width: 1200px;
+    height: 400px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
   .featured-bracelet-content {
@@ -126,10 +131,6 @@
     padding: 40px;
   }
   
-  .featured-bracelet-image {
-    flex: 1;
-    height: 400px;
-  }
   
   .featured-bracelet-image img {
     width: 100%;

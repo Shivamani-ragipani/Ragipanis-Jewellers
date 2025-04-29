@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './ContactPage.css';
 
+import { FaLocationArrow, FaPhone, FaMailBulk, FaClock} from "react-icons/fa"
+
 const ContactPage = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -29,9 +31,9 @@ const ContactPage = () => {
     <div className="contact-page">
       <div className="page-header">
         <div className="container">
-          <div className="breadcrumb">
+          {/* <div className="breadcrumb">
             <Link to="/">Home</Link> / Contact Us
-          </div>
+          </div> */}
           <h1>Contact Us</h1>
         </div>
       </div>
@@ -101,7 +103,8 @@ const ContactPage = () => {
           <div className="contact-info-boxes">
             <div className="contact-info-box">
               <div className="icon">
-                <i className="icon-location"></i>
+                {/* <i className="icon-location"></i> */}
+                <FaLocationArrow />
               </div>
               <div className="content">
                 <h4>Hyderabad</h4>
@@ -111,7 +114,8 @@ const ContactPage = () => {
             
             <div className="contact-info-box">
               <div className="icon">
-                <i className="icon-phone"></i>
+                {/* <i className="icon-phone"></i> */}
+                <FaPhone />
               </div>
               <div className="content">
                 <h4>Call us :</h4>
@@ -121,7 +125,8 @@ const ContactPage = () => {
             
             <div className="contact-info-box">
               <div className="icon">
-                <i className="icon-email"></i>
+                {/* <i className="icon-email"></i> */}
+                <FaMailBulk />
               </div>
               <div className="content">
                 <h4>Mail us :</h4>
@@ -131,7 +136,8 @@ const ContactPage = () => {
             
             <div className="contact-info-box">
               <div className="icon">
-                <i className="icon-clock"></i>
+                {/* <i className="icon-clock"></i> */}
+                <FaClock />
               </div>
               <div className="content">
                 <h4>Open time :</h4>

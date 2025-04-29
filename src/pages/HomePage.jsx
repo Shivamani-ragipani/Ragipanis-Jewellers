@@ -97,10 +97,10 @@ const HomePage = () => {
               <span className="featured-tag">EXCLUSIVE PRODUCT</span>
               <h2>Rose Gold With Diamond Hotell Bracelet</h2>
               <p>Luxurious bracelet with premium diamonds and rose gold finish</p>
-              <Link to="/shop/bracelets/diamond-hotell" className="btn btn-primary">SHOP NOW</Link>
+              <Link to="/shop/Bracelets" className="btn btn-primary">SHOP NOW</Link>
             </div>
             <div className="featured-bracelet-image">
-              <img src="/images/diamond-bracelet.jpg" alt="Diamond Bracelet" />
+              {/* <img src="/featuredbracelet.jpeg" alt="Diamond Bracelet" /> */}
             </div>
           </div>
         </div>

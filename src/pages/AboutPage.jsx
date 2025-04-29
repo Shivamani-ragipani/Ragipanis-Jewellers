@@ -320,26 +320,26 @@ const AboutPage = () => {
               <div className="visit-info">
                 <div className="info-item">
                   <h3>Address</h3>
-                  <p>123 Luxury Lane</p>
-                  <p>Diamond District</p>
-                  <p>New York, NY 10001</p>
+                  <p>Chaitanya Puri</p>
+                  <p>Hyderabad District</p>
+                  <p>Telangana, India</p>
                 </div>
                 <div className="info-item">
                   <h3>Hours</h3>
-                  <p>Monday - Friday: 10am - 7pm</p>
-                  <p>Saturday: 10am - 6pm</p>
-                  <p>Sunday: 12pm - 5pm</p>
+                  <p>Monday - Friday: 10am - 9pm</p>
+                  <p>Saturday: 10am - 8pm</p>
+                  <p>Sunday: 12pm - 8pm</p>
                 </div>
                 <div className="info-item">
                   <h3>Contact</h3>
-                  <p>Phone: (212) 555-7890</p>
-                  <p>Email: info@elegancejewels.com</p>
+                  <p>Phone: +91 99XXXXXXX</p>
+                  <p>Email: shivamaniragipani@gmail.com</p>
                 </div>
               </div>
               <Link to="/contact" className="contact-btn">Contact Us</Link>
             </div>
             <div className="visit-image">
-              <img src="/images/about/showroom.jpg" alt="Elegance Jewels Showroom" />
+              <img src="/showroom.png" alt="Elegance Jewels Showroom" />
             </div>
           </div>
         </div>

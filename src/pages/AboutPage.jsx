@@ -10,7 +10,7 @@ const AboutPage = () => {
       <div className="about-header">
         <div className="container">
           <div className="breadcrumb">
-            <Link to="/">Home</Link> / <span>About Us</span>
+            {/* <Link to="/">Home</Link> / <span>About Us</span> */}
           </div>
           <h1>Our Story</h1>
         </div>

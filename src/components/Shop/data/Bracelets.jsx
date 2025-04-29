@@ -1,6 +1,6 @@
 const braceletsData = [
     {
-        id: 57,
+        id: 12,
         name: "Royal Blue Sapphire Gold Bracelet",
         price: { min: 110, max: 239 },
         rating: 4,
@@ -9,7 +9,7 @@ const braceletsData = [
         metal: "Yellow Gold",
         stone: "Diamond",
         carat: "18KT",
-        isNew: false,
+        isNew: true,
         isSale: false,
         discount: 0,
         description:
@@ -57,7 +57,7 @@ const braceletsData = [
         metal: "Yellow Gold",
         stone: "Emerald",
         carat: "22KT",
-        isNew: true,
+        isNew: false,
         isSale: false,
         discount: 0,
         description:
@@ -105,7 +105,7 @@ const braceletsData = [
         metal: "Rose Gold",
         stone: "Diamond",
         carat: "18KT",
-        isNew: true,
+        isNew: false,
         isSale: false,
         discount: 0,
         description:
@@ -201,7 +201,7 @@ const braceletsData = [
         metal: "Yellow Gold",
         stone: "Peridot",
         carat: "22KT",
-        isNew: true,
+        isNew: false,
         isSale: false,
         discount: 0,
         description:
@@ -217,7 +217,7 @@ const braceletsData = [
         metal: "Yellow Gold",
         stone: "Aquamarine",
         carat: "22KT",
-        isNew: true,
+        isNew: false,
         isSale: false,
         discount: 0,
         description:

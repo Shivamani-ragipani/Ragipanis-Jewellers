@@ -1,38 +1,39 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ProductCard from '../../pages/ProductCard';
+import ProductCard from '../../pages/ProductCard.jsx';
 
 const LatestProducts = () => {
   const products = [
-    {
+   {
       id: 1,
-      name: 'Yellow Gold & Diamond Ring',
-      price: 599.99,
-      rating: 5,
-      image: '/featured1.2.jpeg',
-      category: 'Rings',
+      name: "Hollow Parrot Model Jhumka with Tower Attachment",
+      price: 20000,
+      rating: 4.5,
+      image: "/ragipanis imgs/earrings/earring1.jpg",
+      category: "Earrings",
       isNew: true,
-      isSale: false
-    },
+      isSale: false,
+      },
     {
       id: 2,
-      name: 'Infinity Diamond Bracelet',
-      price: 399.99,
-      rating: 4,
-      image: '/featured2.1.jpeg',
-      category: 'Bracelets',
-      isNew: true,
-      isSale: false
+        name: "Royal Blue Sapphire Gold Bracelet",
+        price: 30000,
+        rating: 4,
+        image: "/ragipanis imgs/bracelets/bracelet1.jpg",
+        category: "Bracelets",
+        isNew: true,
+        isSale: false,
     },
     {
       id: 3,
-      name: 'Radiant Diamond Pendant',
-      price: 299.99,
-      rating: 5,
-      image: '/featured3.1.jpeg',
-      category: 'Pendants',
+      name: "Celestial Nakshatra Necklace",
+      price: 29999,
+      originalPrice: 180,
+      rating: 4,
+      image: "/ragipanis imgs/Necklaces/necklace1.jpg",
+      category: "Necklaces",
       isNew: true,
-      isSale: false
+      isSale: false,
     }
   ];
   

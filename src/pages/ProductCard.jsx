@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './ProductCard.css'; // Assuming you have a CSS file for styling
+// import "../../src/components/Products/FeaturedProducts.css"; 
 
 const ProductCard = ({ product }) => {
   const { id, name, price, salePrice, rating, image, category, isNew, isSale } = product;
@@ -15,6 +17,7 @@ const ProductCard = ({ product }) => {
   };
   
   return (
+    <div className="product-grid">
     <div className="product-card">
       <div className="product-image">
         <Link to={`/product/${id}`}>
@@ -47,17 +50,18 @@ const ProductCard = ({ product }) => {
         
         <div className="product-price">
           <span className="current-price">${salePrice || price}</span>
-          {salePrice && <span className="old-price">${price}</span>}
+          {salePrice && <span className="old-price">₹{price}</span>}
         </div>
         
         <div className="product-rating">
           {renderStars(rating)}
         </div>
         
-        <button className="add-to-cart">
+        <button className="cart">
           <i className="icon-cart"></i> Add to Cart
         </button>
       </div>
+    </div>
     </div>
   );
 };

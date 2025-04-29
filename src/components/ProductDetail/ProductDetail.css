@@ -530,6 +530,8 @@
   .product-card:hover .product-name {
     color: #d4af37;
   }
+
+  
   
   /* Loading and Not Found States */
   .product-loading, .product-not-found {

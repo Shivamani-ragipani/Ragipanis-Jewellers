@@ -1,51 +1,62 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './FeaturedProducts.css';
-import ProductCard from '../../pages/ProductCard';
+import ProductCard from '../../pages/ProductCard.jsx';
 
 const FeaturedProducts = () => {
   const products = [
     {
-      id: 1,
-      name: 'Real Diamond Jewelry Gold Plated',
-      price: 499.99,
-      salePrice: 399.99,
-      rating: 5,
-      image: '/featured1.jpeg',
-      category: 'Rings',
-      isNew: true,
-      isSale: true
-    },
-    {
-      id: 2,
-      name: 'Fire Stone Ring 18K Yellow Gold',
-      price: 599.99,
-      rating: 4,
-      image: '/featured1.2.jpeg',
-      category: 'Rings',
-      isNew: false,
-      isSale: false
-    },
-    {
-      id: 3,
-      name: 'Bridal Set with 3 pcs Rose Gold',
-      price: 799.99,
-      salePrice: 699.99,
-      rating: 5,
-      image: '/featured3.1.jpeg',
-      category: 'Bridal Sets',
-      isNew: true,
-      isSale: true
-    },
-    {
       id: 4,
-      name: 'Casual Diamond Wedding Ring Yellow',
-      price: 349.99,
-      rating: 4,
-      image: '/featured3.jpeg',
-      category: 'Rings',
+    name: "Blue Topaz Diamond Engagement Wedding Ring",
+    price: 20000,
+    originalPrice: 370,
+    rating: 4,
+    image: "/ragipanis imgs/rings/ring1.jpg",
+    category: "Rings",
+    metal: "White Gold",
+    stone: "Topaz",
+    carat: "18KT",
+    isNew: true,
+    isSale: true,
+    },
+    {
+      id: 127,
+      name: "Diamond Halo Engagement Ring",
+      price: 32000,
+      rating: 5,
+      image: "/ragipanis imgs/rings/ring3.jpg",
+      category: "Rings",
+      metal: "White Gold",
+      stone: "Diamond",
+      carat: "22KT",
+      isNew: true,
+      isSale: true,
+    },
+    {
+      id: 87,
+    name: "Rose Gold Heart Pendant Necklace",
+    price: 19000,
+    rating: 4.5,
+    image: "/ragipanis imgs/Necklaces/necklace12.1.jpg",
+    category: "Necklaces",
+    metal: "Rose Gold",
+    stone: "Diamond",
+    carat: "18KT",
+    isNew: true,
+    isSale: true,
+    },
+    {
+      id: 39,
+      name: "Vintage Opal Gold Bracelet",
+      price: 14999,
+      rating: 4.6,
+      image: "/ragipanis imgs/bracelets/bracelet9.jpg",
+      category: "Bracelets",
+      metal: "Yellow Gold",
+      stone: "Opal",
+      carat: "22KT",
       isNew: false,
-      isSale: false
+      isSale: true,
     },
     {
       id: 5,

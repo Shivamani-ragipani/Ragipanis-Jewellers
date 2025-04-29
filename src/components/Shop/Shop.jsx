@@ -934,10 +934,10 @@ const Shop = () => {
             </div>
           </div>
 
-          <div className={`products-grid ${viewMode === "list" ? "list-view" : ""}`}>
+          <div className={`products-grids ${viewMode === "list" ? "list-view" : ""}`}>
             {currentProducts.length > 0 ? (
               currentProducts.map((product) => (
-                <div key={product.id} className="product-card">
+                <div key={product.id} className="product-cards">
                   <Link to={`/product/${product.id}`} className="product-link">
                     <div className="product-image">
                       <img src={product.image || "/public/featured1.jpeg"} alt={product.name} />

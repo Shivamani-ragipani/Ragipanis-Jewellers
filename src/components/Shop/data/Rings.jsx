@@ -48,22 +48,22 @@ const ringsData = [
     description:
       "The Elina solitaire ring features a stunning diamond in a classic 24KT white gold setting, perfect for engagements or special occasions.",
   },
-  {
-    id: 12,
-    name: "Featured New Cushion Ruby Gold Ring With Diamonds",
-    price: { min: 150, max: 190 },
-    rating: 5,
-    image: "/ragipanis imgs/rings/ring4.jpg",
-    category: "Rings",
-    metal: "Yellow Gold",
-    stone: "Ruby",
-    carat: "22KT",
-    isNew: true,
-    isSale: false,
-    discount: 0,
-    description:
-      "This stunning ring features a cushion-cut ruby center stone surrounded by diamonds in a 22KT yellow gold setting.",
-  },
+  // {
+  //   id: 6,
+  //   name: "Featured New Cushion Ruby Gold Ring With Diamonds",
+  //   price: { min: 150, max: 190 },
+  //   rating: 5,
+  //   image: "/ragipanis imgs/rings/ring4.jpg",
+  //   category: "Rings",
+  //   metal: "Yellow Gold",
+  //   stone: "Ruby",
+  //   carat: "22KT",
+  //   isNew: true,
+  //   isSale: false,
+  //   discount: 0,
+  //   description:
+  //     "This stunning ring features a cushion-cut ruby center stone surrounded by diamonds in a 22KT yellow gold setting.",
+  // },
   {
     id: 16,
     name: "Emerald Cut Diamond Eternity Band",

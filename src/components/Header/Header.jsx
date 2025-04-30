@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, NavLink, Route, Router, Routes } from "react-router-dom";
+import Shop from "../Shop/Shop.jsx";
 import "./Header.css";
 
 import {
@@ -9,7 +10,7 @@ import {
   FaStar,
   FaUser,
 } from "react-icons/fa";
-import { BsGrid, BsListUl } from "react-icons/bs";
+
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,8 +20,10 @@ const Header = () => {
 
   useEffect(() => {
     // Update cart and wishlist counts from localStorage or state management
-    setWishlistCount(2);
-    setCartCount(3);
+    const storedWishlistCount = JSON.parse(localStorage.getItem("wishlistCount")) || 0;
+    const storedCartCount = JSON.parse(localStorage.getItem("cartCount")) || 0;
+    setWishlistCount(storedWishlistCount);
+    setCartCount(storedCartCount);
 
     const handleScroll = () => {
       if (window.scrollY > 50) {
@@ -33,6 +36,33 @@ const Header = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  useEffect(() => {
+    const handleCartUpdate = () => {
+      const updatedCartCount = JSON.parse(localStorage.getItem("cartCount")) || 0;
+      setCartCount(updatedCartCount);
+    };
+  
+    // ✅ Listen for custom event
+    window.addEventListener("cartCountUpdated", handleCartUpdate);
+  
+    return () => window.removeEventListener("cartCountUpdated", handleCartUpdate);
+  }, []);
+
+
+  useEffect(() => {
+    const handleWishlistUpdate = () => {
+      const updatedWishlistCount = JSON.parse(localStorage.getItem("wishlistCount")) || 0;
+      setWishlistCount(updatedWishlistCount);
+    };
+  
+    // ✅ Listen for custom event
+    window.addEventListener("wishlistCountUpdated", handleWishlistUpdate);
+  
+    return () => window.removeEventListener("wishlistCountUpdated", handleWishlistUpdate);
+  }, []);
+  
+  
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);

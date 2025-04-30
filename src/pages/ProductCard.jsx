@@ -4,11 +4,48 @@ import './ProductCard.css'; // Assuming you have a CSS file for styling
 // import "../../src/components/Products/FeaturedProducts.css"; 
 
 import { FaHeart, FaSearch, FaShoppingCart, FaStar, FaStarHalf } from "react-icons/fa"
-import { BsGrid, BsListUl } from "react-icons/bs"
 
 
 const ProductCard = ({ product }) => {
   const { id, name, price, salePrice, rating, image, category, isNew, isSale } = product;
+
+
+//Add to Cart and Wishlist functions
+  const addToCart = (e, product) => {
+    e.preventDefault();
+    e.stopPropagation();
+  
+    const cartCount = JSON.parse(localStorage.getItem("cartCount")) || 0;
+    localStorage.setItem("cartCount", cartCount + 1);
+  
+    // ✅ Dispatch custom event
+    window.dispatchEvent(new Event("cartCountUpdated"));
+  
+    // alert(`Added ${product.name} to cart!`);
+  };
+
+
+  const addToWishlist = (e, product) => {
+    e.preventDefault();
+    e.stopPropagation();
+  
+    const wishlistCount = JSON.parse(localStorage.getItem("wishlistCount")) || 0;
+    localStorage.setItem("wishlistCount", wishlistCount + 1);
+  
+    // ✅ Dispatch custom event
+    window.dispatchEvent(new Event("wishlistCountUpdated"));
+  
+    // alert(`Added ${product.name} to wishlist!`);
+  };
+
+
+  const quickView = (e, product) => {
+    e.preventDefault()
+    e.stopPropagation()
+    console.log(`Quick view for ${product.name}`)
+    // In a real app, you would open a modal with product details
+    alert(`Quick view for ${product.name}`)
+  }
   
   const renderStars = (rating) => {
     const stars = [];
@@ -38,14 +75,16 @@ const ProductCard = ({ product }) => {
         </div>
         
         <div className="product-actions">
-          <button className="action-btn" title="Quick View">
-            <FaSearch />
-            <i className="icon-eye"></i>
-          </button>
-          <button className="action-btn" title="Add to Wishlist">
-            <FaHeart />
-            {/* <i className="icon-heart"></i> */}
-          </button>
+        <button className="action-btn" title="Quick View" onClick={(e) => quickView(e, product)}>
+                          <FaSearch />
+                        </button>
+                        <button
+                          className="action-btn"
+                          title="Add to Wishlist"
+                          onClick={(e) => addToWishlist(e, product)}
+                        >
+                          <FaHeart />
+                        </button>
           <button className="action-btn" title="Compare">
             <FaShoppingCart />
             {/* <i className="icon-compare"></i> */}
@@ -70,8 +109,8 @@ const ProductCard = ({ product }) => {
           {renderStars(rating)}
         </div>
         
-        <button className="cart">
-          <i className="icon-cart"></i> Add to Cart
+        <button className="cart" onClick={(e) => addToCart(e, product)}>
+                        <FaShoppingCart className="cart-icon" /> Add to Cart
         </button>
       </div>
     </div>

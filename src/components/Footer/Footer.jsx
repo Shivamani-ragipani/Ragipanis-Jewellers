@@ -106,6 +106,7 @@ const Footer = () => {
         <div className="container">
           <div className="footer-bottom-content">
             <div className="social-links">
+            <Link to="https://www.linkedin.com/in/shivamani-ragipani/"><i className=""><FaLinkedinIn/></i></Link>
               <Link to="https://portfolio-shivamani.vercel.app/"><i className=""><FaFacebookF/></i></Link>
               <Link to="https://portfolio-shivamani.vercel.app/"><i className=""><FaTwitter/></i></Link>
               <Link to="instagram.com/shivamani_ragipani/"><i className=""><FaInstagram/></i></Link>

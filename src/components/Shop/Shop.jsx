@@ -299,22 +299,53 @@ const Shop = () => {
   }
 
   // Add to cart function
-  const addToCart = (e, product) => {
-    e.preventDefault()
-    e.stopPropagation()
-    console.log(`Added ${product.name} to cart`)
-    // In a real app, you would dispatch an action to add the product to the cart
-    alert(`Added ${product.name} to cart!`)
-  }
+  // const addToCart = (e, product) => {
+  //   e.preventDefault();
+  //   e.stopPropagation();
+  //   console.log(`Added ${product.name} to cart`);
 
+  //   const cartCount = JSON.parse(localStorage.getItem("cartCount")) || 0;
+  //   localStorage.setItem("cartCount", cartCount + 1);
+
+  //   alert(`Added ${product.name} to cart!`);
+  // };
+
+
+  const addToCart = (e, product) => {
+    e.preventDefault();
+    e.stopPropagation();
+  
+    const cartCount = JSON.parse(localStorage.getItem("cartCount")) || 0;
+    localStorage.setItem("cartCount", cartCount + 1);
+  
+    // ✅ Dispatch custom event
+    window.dispatchEvent(new Event("cartCountUpdated"));
+  
+    // alert(`Added ${product.name} to cart!`);
+  };
+  
   // Add to wishlist function
+  // const addToWishlist = (e, product) => {
+  //   e.preventDefault()
+  //   e.stopPropagation()
+  //   console.log(`Added ${product.name} to wishlist`)
+  //   // In a real app, you would dispatch an action to add the product to the wishlist
+  //   alert(`Added ${product.name} to wishlist!`)
+  // }
+
   const addToWishlist = (e, product) => {
-    e.preventDefault()
-    e.stopPropagation()
-    console.log(`Added ${product.name} to wishlist`)
-    // In a real app, you would dispatch an action to add the product to the wishlist
-    alert(`Added ${product.name} to wishlist!`)
-  }
+    e.preventDefault();
+    e.stopPropagation();
+  
+    const wishlistCount = JSON.parse(localStorage.getItem("wishlistCount")) || 0;
+    localStorage.setItem("wishlistCount", wishlistCount + 1);
+  
+    // ✅ Dispatch custom event
+    window.dispatchEvent(new Event("wishlistCountUpdated"));
+  
+    // alert(`Added ${product.name} to wishlist!`);
+  };
+  
 
   // Quick view function
   const quickView = (e, product) => {
@@ -737,7 +768,7 @@ const Shop = () => {
                         checked={priceRange === "0-100"}
                         onChange={() => handlePriceChange("0-100")}
                       />
-                      $0 - $100
+                      ₹0 - ₹10000
                     </label>
                   </li>
                   <li>
@@ -748,7 +779,7 @@ const Shop = () => {
                         checked={priceRange === "100-200"}
                         onChange={() => handlePriceChange("100-200")}
                       />
-                      $100 - $200
+                      ₹10000 - ₹20000
                     </label>
                   </li>
                   <li>
@@ -759,7 +790,7 @@ const Shop = () => {
                         checked={priceRange === "200-300"}
                         onChange={() => handlePriceChange("200-300")}
                       />
-                      $200 - $300
+                      ₹20000 - ₹30000
                     </label>
                   </li>
                   <li>
@@ -770,7 +801,7 @@ const Shop = () => {
                         checked={priceRange === "300-400"}
                         onChange={() => handlePriceChange("300-400")}
                       />
-                      $300 - $400
+                      ₹30000 - ₹40000
                     </label>
                   </li>
                   <li>
@@ -781,7 +812,7 @@ const Shop = () => {
                         checked={priceRange === "400-500"}
                         onChange={() => handlePriceChange("400-500")}
                       />
-                      $400 - $500
+                      ₹40000 - ₹50000
                     </label>
                   </li>
                   <li>
@@ -792,7 +823,7 @@ const Shop = () => {
                         checked={priceRange === "500-"}
                         onChange={() => handlePriceChange("500-")}
                       />
-                      $500+
+                      ₹50000+
                     </label>
                   </li>
                 </ul>

@@ -7,7 +7,7 @@ const LatestProducts = () => {
    {
       id: 1,
       name: "Hollow Parrot Model Jhumka with Tower Attachment",
-      price: 20000,
+      price: 53000,
       rating: 4.5,
       image: "/ragipanis imgs/earrings/earring1.jpg",
       category: "Earrings",
@@ -17,7 +17,7 @@ const LatestProducts = () => {
     {
       id: 2,
         name: "Royal Blue Sapphire Gold Bracelet",
-        price: 30000,
+        price: 68900,
         rating: 4,
         image: "/ragipanis imgs/bracelets/bracelet1.jpg",
         category: "Bracelets",
@@ -27,7 +27,7 @@ const LatestProducts = () => {
     {
       id: 3,
       name: "Celestial Nakshatra Necklace",
-      price: 29999,
+      price: 132000,
       originalPrice: 180,
       rating: 4,
       image: "/ragipanis imgs/Necklaces/necklace1.jpg",

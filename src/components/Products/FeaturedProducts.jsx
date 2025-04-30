@@ -8,7 +8,7 @@ const FeaturedProducts = () => {
     {
       id: 4,
     name: "Engagement Wedding Ring",
-    price: 20000,
+    price: 31999,
     originalPrice: 370,
     rating: 4,
     image: "/ragipanis imgs/rings/ring1.jpg",
@@ -16,13 +16,14 @@ const FeaturedProducts = () => {
     metal: "White Gold",
     stone: "Topaz",
     carat: "18KT",
+    weight: 6,
     isNew: true,
     isSale: true,
     },
     {
       id: 127,
       name: "Lord Venkateshwara Ring",
-      price: 32000,
+      price: 49999,
       rating: 5,
       image: "/ragipanis imgs/rings/ring3.jpg",
       category: "Rings",
@@ -35,7 +36,7 @@ const FeaturedProducts = () => {
     {
       id: 87,
     name: "Womens Gold Necklace",
-    price: 19000,
+    price: 89990,
     rating: 4.5,
     image: "/ragipanis imgs/Necklaces/necklace12.1.jpg",
     category: "Necklaces",
@@ -48,7 +49,7 @@ const FeaturedProducts = () => {
     {
       id: 39,
       name: "Vintage Opal Gold Bracelet",
-      price: 14999,
+      price: 58300,
       rating: 4.6,
       image: "/ragipanis imgs/bracelets/bracelet9.jpg",
       category: "Bracelets",
@@ -61,7 +62,7 @@ const FeaturedProducts = () => {
     {
       id: 40,
         name: "Delicate Amethyst Gold Bracelet",
-        price: 17999,
+        price: 74200,
         rating: 4.2,
         image: "/ragipanis imgs/bracelets/bracelet17.jpg",
         category: "Bracelets",
@@ -71,7 +72,7 @@ const FeaturedProducts = () => {
     {
       id: 91,
     name: "Gold Flower Choker Necklace",
-    price: 23000,
+    price: 115000,
     rating: 5,
     image: "/ragipanis imgs/Necklaces/necklace16.1.jpg",
     category: "Necklaces",
@@ -80,9 +81,9 @@ const FeaturedProducts = () => {
     },
     {
       id: 7,
-      name: 'Elegant Teardrop Earrings',
-      price: 34000,
-      salePrice: 27999,
+      name: 'Elegant Teardrop Earrings & Bangles',
+      price: 80000,
+      salePrice: 69999,
       rating: 5,
       image: '/featured4.jpeg',
       category: 'Earrings',
@@ -92,7 +93,7 @@ const FeaturedProducts = () => {
     {
       id: 127,
     name: "Gold Diamond Flower Engagement Ring",
-    price: 17999,
+    price: 26500,
     rating: 5,
     image: "/ragipanis imgs/rings/ring359.jpg",
     category: "Rings",

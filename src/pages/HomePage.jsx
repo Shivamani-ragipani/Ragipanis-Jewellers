@@ -49,7 +49,7 @@ const HomePage = () => {
                 <span className="special-tag">NEW THIS WEEK</span>
                 <h3>Women's Rose Gold Necklace</h3>
                 <p>Exquisite craftsmanship for the discerning woman</p>
-                <Link to="/shop/necklaces" className="btn btn-secondary">SHOP NOW</Link>
+                <Link to="/shop/Necklaces" className="btn btn-secondary">SHOP NOW</Link>
               </div>
               <div className="special-offer-image">
                 <img src="/Newthisweek1.jpeg" alt="Rose Gold Necklace" />
@@ -60,7 +60,7 @@ const HomePage = () => {
                 <span className="special-tag">BEST SELLER</span>
                 <h3>Rose Gold Ring For Women</h3>
                 <p>Elegant design with premium craftsmanship</p>
-                <Link to="/shop/rings" className="btn btn-secondary">SHOP NOW</Link>
+                <Link to="/shop/Rings" className="btn btn-secondary">SHOP NOW</Link>
               </div>
               <div className="special-offer-image">
                 <img src="/newthisweek2.jpeg" alt="Rose Gold Ring" />
@@ -77,7 +77,7 @@ const HomePage = () => {
               <span className="featured-tag">TOP PICKS & TRENDING</span>
               <h2>Drop Cut Blue Necklace With Earrings Set</h2>
               <p>Stunning blue gemstones set in elegant rose gold settings</p>
-              <Link to="/shop/necklaces/blue-set" className="btn btn-primary">SHOP NOW</Link>
+              <Link to="/shop/Necklaces" className="btn btn-primary">SHOP NOW</Link>
             </div>
           </div>
         </div>

@@ -12,7 +12,7 @@ const HeroSlider = () => {
       title: 'Woman in Golden Rings And Necklaces',
       subtitle: 'Exquisite products for the dynamic urban lifestyle',
       image: '/banner4.png',
-      link: '/shop/necklaces'
+      link: '/shop/Necklaces'
     },
     {
       id: 2,

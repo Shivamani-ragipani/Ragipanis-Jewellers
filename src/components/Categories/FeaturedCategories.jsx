@@ -11,7 +11,7 @@ const FeaturedCategories = () => {
       rating: 5,
       image: "/ragipanis imgs/rings/ring51.jpg",
       category: "Rings",
-      link: '/shop/rings'
+      link: '/shop/Rings'
     },
     {
       id: 38,
@@ -19,7 +19,7 @@ const FeaturedCategories = () => {
       rating: 4.9,
       image: "/ragipanis imgs/bracelets/bracelet1.1.jpg",
       category: "Bracelets",
-      link: '/shop/bracelets'
+      link: '/shop/Bracelets'
     },
     {
       id: 88,

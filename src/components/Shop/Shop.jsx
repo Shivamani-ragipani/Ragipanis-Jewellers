@@ -6,6 +6,7 @@ import "./Shop.css"
 
 // Import product data
 import { allProducts } from "./data"
+import { calculateGoldPrice } from "../../utils/calculatePrice"
 
 // Import icons
 import { FaHeart, FaSearch, FaShoppingCart, FaStar, FaStarHalf } from "react-icons/fa"
@@ -123,6 +124,21 @@ const Shop = () => {
       setSelectedShapes([...selectedShapes, shape])
     }
   }
+
+
+  const goldRate = 5000; // Rate of gold per gram (constant)
+  const makingChargePerGram = 300;
+
+  // const totalPrice = calculateGoldPrice({
+  //   goldRate, // Using the constant value
+  //   weight: product.weight, // Weight is passed dynamically for each product
+  //   makingChargePerGram, // Using the constant value
+  // });
+
+  // // Update the price object with the calculated total price
+  // const minPrice = totalPrice;
+  // const maxPrice = totalPrice + 10000;
+
 
   // Handle price range selection
   const handlePriceChange = (range) => {
@@ -966,78 +982,81 @@ const Shop = () => {
           </div>
 
           <div className={`products-grids ${viewMode === "list" ? "list-view" : ""}`}>
-            {currentProducts.length > 0 ? (
-              currentProducts.map((product) => (
-                <div key={product.id} className="product-cards">
-                  {/* <Link to={`/product/${product.id}`} className="product-link"> */}
-                  <Link to="/shop" className="product-link">
-                    <div className="product-image">
-                      <img src={product.image || "/public/featured1.jpeg"} alt={product.name} />
+  {currentProducts.length > 0 ? (
+    currentProducts.map((product) => {
+      // Calculate the total price using the calculateGoldPrice function
+      const totalPrice = calculateGoldPrice({
+        goldRate,
+        weight: product.weight,
+        makingChargePerGram,
+      });
 
-                      {product.isSale && (
-                        <div className="product-badge sale">
-                          <span>{product.discount}%</span>
-                        </div>
-                      )}
+      const minPrice = totalPrice;
+      const maxPrice = totalPrice + 10000;
 
-                      {product.isNew && (
-                        <div className="product-badge new">
-                          <span>NEW</span>
-                        </div>
-                      )}
+      return (
+        <div key={product.id} className="product-cards">
+          <Link to="/shop" className="product-link">
+            <div className="product-image">
+              <img src={product.image || "/public/featured1.jpeg"} alt={product.name} />
 
-                      <div className="product-actions">
-                        <button className="action-btn" title="Quick View" onClick={(e) => quickView(e, product)}>
-                          <FaSearch />
-                        </button>
-                        <button
-                          className="action-btn"
-                          title="Add to Wishlist"
-                          onClick={(e) => addToWishlist(e, product)}
-                        >
-                          <FaHeart />
-                        </button>
-                      </div>
-                    </div>
-
-                    <div className="product-info">
-                      <div className="product-category">{product.category}</div>
-                      {/* <h3 className="product-name">{product.name}</h3> */}
-
-                      <div className="product-rating">
-                        <div className="stars">{renderStars(product.rating)}</div>
-                      </div>
-
-                      <div className="product-price">
-                        {product.price.min === product.price.max ? (
-                          <>
-                            {product.originalPrice && <span className="old-price">₹{product.originalPrice}</span>}
-                            <span className="current-price">₹{product.price.min}</span>
-                          </>
-                        ) : (
-                          <span className="price-range">
-                            ₹{product.price.min} – ₹{product.price.max}
-                          </span>
-                        )}
-                      </div>
-
-                      {/* <div className="product-description">
-                        <p>{product.description}</p>
-                      </div> */}
-
-                      <button className="add-to-cart" onClick={(e) => addToCart(e, product)}>
-                        <FaShoppingCart className="cart-icon" /> Add to Cart
-                      </button>
-                    </div>
-                  </Link>
+              {product.isSale && (
+                <div className="product-badge sale">
+                  <span>{product.discount}%</span>
                 </div>
-              ))
-            ) : (
-              <div className="no-products">
-                <p>No products found matching your criteria. Please try different filters.</p>
+              )}
+
+              {product.isNew && (
+                <div className="product-badge new">
+                  <span>NEW</span>
+                </div>
+              )}
+
+              <div className="product-actions">
+                <button className="action-btn" title="Quick View" onClick={(e) => quickView(e, product)}>
+                  <FaSearch />
+                </button>
+                <button className="action-btn" title="Add to Wishlist" onClick={(e) => addToWishlist(e, product)}>
+                  <FaHeart />
+                </button>
               </div>
-            )}
-          </div>
+            </div>
+
+            <div className="product-info">
+              <div className="product-category">{product.category}</div>
+
+              <div className="product-rating">
+                <div className="stars">{renderStars(product.rating)}</div>
+              </div>
+
+              <div className="product-price">
+                {minPrice === maxPrice ? (
+                  <>
+                    {product.originalPrice && <span className="old-price">₹{product.originalPrice}</span>}
+                    <span className="current-price">₹{minPrice}</span>
+                  </>
+                ) : (
+                  <span className="price-range">
+                    ₹{minPrice} – ₹{maxPrice}
+                  </span>
+                )}
+              </div>
+
+              <button className="add-to-cart" onClick={(e) => addToCart(e, product)}>
+                <FaShoppingCart className="cart-icon" /> Add to Cart
+              </button>
+            </div>
+          </Link>
+        </div>
+      );
+    })
+  ) : (
+    <div className="no-products">
+      <p>No products found matching your criteria. Please try different filters.</p>
+    </div>
+  )}
+</div>
+
 
           {/* Pagination */}
           {totalPages > 1 && (

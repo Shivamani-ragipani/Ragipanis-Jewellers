@@ -213,7 +213,7 @@ const ProductDetail = () => {
                   className={`thumbnail ${selectedImage === index ? 'active' : ''}`}
                   onClick={() => setSelectedImage(index)}
                 >
-                  <img src={img || "/placeholder.svg"} alt={`${product.name} - view ${index + 1}`} />
+                  <img src={img || "/LogoS_transparent-Photoroom.png"} alt={`${product.name} - view ${index + 1}`} />
                 </div>
               ))}
             </div>

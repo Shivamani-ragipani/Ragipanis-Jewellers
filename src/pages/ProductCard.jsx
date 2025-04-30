@@ -66,7 +66,7 @@ const ProductCard = ({ product }) => {
         </Link> */}
 
         <Link to='/shop'>
-          <img src={image || "/placeholder.svg"} alt={name} />
+          <img src={image || "/LogoS_transparent-Photoroom.png"} alt={name} />
         </Link> 
         
         <div className="product-badges">

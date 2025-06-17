@@ -8,6 +8,8 @@ Ragipanis-Jewellers is a family-owned jewelry website built using the MERN stack
     - A responsive and visually appealing user interface.
     - Dynamic product galleries and detailed product pages.
     - User-friendly navigation and search functionality.
+  
+ Still need to do 👇
 
 2. **Backend (Node.js & Express.js)**:
     - RESTful APIs to handle data requests and responses.
